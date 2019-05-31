@@ -1,0 +1,232 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# 2N3904
+#
+DEF 2N3904 Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "2N3904" 200 0 50 H V L CNN
+F2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" 200 -75 50 H I L CIN
+F3 "" 0 0 50 H I L CNN
+$FPLIST
+ TO?92*
+$ENDFPLIST
+DRAW
+C 50 0 111 0 1 10 N
+P 2 0 1 0 25 25 100 100 N
+P 3 0 1 0 25 -25 100 -100 100 -100 N
+P 3 0 1 20 25 75 25 -75 25 -75 N
+P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
+X E 1 100 -200 100 U 50 50 1 1 P
+X B 2 -200 0 225 R 50 50 1 1 P
+X C 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Audio
+#
+DEF Audio J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Audio" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 0 60 0 0 0 Audio Normal 0 L C
+T 0 75 -100 60 0 0 0 GND Normal 0 L C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Audio 1 -200 0 150 R 50 50 1 1 I
+X GND 2 -200 -100 150 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# CP_Small
+#
+DEF CP_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "CP_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -60 -12 60 -27 0 1 0 F
+S -60 27 60 12 0 1 0 N
+P 2 0 1 0 -50 60 -30 60 N
+P 2 0 1 0 -40 50 -40 70 N
+X ~ 1 0 100 73 D 50 50 1 1 P
+X ~ 2 0 -100 73 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CXA1145
+#
+DEF CXA1145 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "CXA1145" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 100 60 0 0 0 AUDIO~(pin~9) Normal 0 L C
+T 0 75 0 60 0 0 0 CHROMA~(pin~15) Normal 0 L C
+T 0 75 -100 60 0 0 0 LUMA~(pin~16) Normal 0 L C
+T 0 75 -200 60 0 0 0 VIDEO~(pin~20) Normal 0 L C
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X AUD 1 -200 100 150 R 50 50 1 1 P
+X CHROMA 2 -200 0 150 R 50 50 1 1 P
+X LUMA 3 -200 -100 150 R 50 50 1 1 P
+X VID 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GND
+#
+DEF GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Power
+#
+DEF Power J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Power" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 150 -100 60 0 0 0 GND Normal 0 C C
+T 0 150 0 60 0 0 0 VCC Normal 0 C C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X VCC 1 -200 0 150 R 50 50 1 1 W
+X GND 2 -200 -100 150 R 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# R
+#
+DEF R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SVideo
+#
+DEF SVideo J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "SVideo" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 -200 60 0 0 0 CHROMA Normal 0 L C
+T 0 75 -50 60 0 0 0 GND Normal 0 L C
+T 0 75 100 60 0 0 0 LUMA Normal 0 L C
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X LUMA 1 -200 100 150 R 50 50 1 1 P
+X GND 2 -200 0 150 R 50 50 1 1 P
+X GND 3 -200 -100 150 R 50 50 1 1 P
+X CHROMA 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# VCC
+#
+DEF VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Video
+#
+DEF Video J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Video" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 -100 60 0 0 0 GND Normal 0 L C
+T 0 75 0 60 0 0 0 Video Normal 0 L C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Video 1 -200 0 150 R 50 50 1 1 I
+X GND 2 -200 -100 150 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

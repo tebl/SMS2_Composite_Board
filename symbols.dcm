@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AUDIO
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
+$CMP Audio
+D Generic connector, single row, 01x02
+K connector
+F ~
+$ENDCMP
+#
+$CMP CXA1145
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
+$CMP Power
+D Generic connector, single row, 01x02
+K connector
+F ~
+$ENDCMP
+#
+$CMP SVideo
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
+$CMP Video
+D Generic connector, single row, 01x02
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library

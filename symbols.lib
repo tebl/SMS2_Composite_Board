@@ -1,0 +1,177 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# AUDIO
+#
+DEF AUDIO J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "AUDIO" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 100 60 0 0 0 AUDIO Normal 0 L C
+T 0 75 0 60 0 0 0 CHROMA Normal 0 L C
+T 0 75 -100 60 0 0 0 LUMA Normal 0 L C
+T 0 75 -200 60 0 0 0 VIDEO Normal 0 L C
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X AUD 9 -200 100 150 R 50 50 1 1 P
+X VID 20 -200 -200 150 R 50 50 1 1 P
+X CHROMA 15 -200 0 150 R 50 50 1 1 P
+X LUMA 16 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Audio
+#
+DEF Audio J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Audio" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 0 60 0 0 0 Audio Normal 0 L C
+T 0 75 -100 60 0 0 0 GND Normal 0 L C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Audio 1 -200 0 150 R 50 50 1 1 I
+X GND 2 -200 -100 150 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# CXA1145
+#
+DEF CXA1145 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "CXA1145" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 100 60 0 0 0 AUDIO~(pin~9) Normal 0 L C
+T 0 75 0 60 0 0 0 CHROMA~(pin~15) Normal 0 L C
+T 0 75 -100 60 0 0 0 LUMA~(pin~16) Normal 0 L C
+T 0 75 -200 60 0 0 0 VIDEO~(pin~20) Normal 0 L C
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X AUD 1 -200 100 150 R 50 50 1 1 P
+X CHROMA 2 -200 0 150 R 50 50 1 1 P
+X LUMA 3 -200 -100 150 R 50 50 1 1 P
+X VID 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power
+#
+DEF Power J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Power" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 150 -100 60 0 0 0 GND Normal 0 C C
+T 0 150 0 60 0 0 0 VCC Normal 0 C C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X VCC 1 -200 0 150 R 50 50 1 1 W
+X GND 2 -200 -100 150 R 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# SVideo
+#
+DEF SVideo J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "SVideo" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 -200 60 0 0 0 CHROMA Normal 0 L C
+T 0 75 -50 60 0 0 0 GND Normal 0 L C
+T 0 75 100 60 0 0 0 LUMA Normal 0 L C
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X LUMA 1 -200 100 150 R 50 50 1 1 P
+X GND 2 -200 0 150 R 50 50 1 1 P
+X GND 3 -200 -100 150 R 50 50 1 1 P
+X CHROMA 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Video
+#
+DEF Video J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Video" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 75 -100 60 0 0 0 GND Normal 0 L C
+T 0 75 0 60 0 0 0 Video Normal 0 L C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Video 1 -200 0 150 R 50 50 1 1 I
+X GND 2 -200 -100 150 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
