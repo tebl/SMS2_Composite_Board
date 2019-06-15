@@ -10,6 +10,8 @@ Board is sectioned off so that only the top section is used for composite video,
 ![Sega Master System II Back](https://github.com/tebl/SMS2_Composite_Board/raw/master/gallery/2019-06-08%2016.48.37.jpg)
 ![Install](https://github.com/tebl/SMS2_Composite_Board/raw/master/gallery/2019-06-08%2001.18.07.jpg)
 
+The extra wires going to the 64-pin chip (leg is cut to make this work) is used in combination with the switch to toggle between 50 and 60Hz. In PAL consoles this is used to let us play the game at full speed, just like the japanese and american consoles. At this point I consider the stock 50Hz setting "easy"-mode!
+
 # Schematic
 The supplied KiCad files should be sufficient as both a schematic and as a  starting point for ordering PCBs (basically you could just zip the contents of the export folder and upload that on a fabrication site), the schematic is also available in [PDF-format](https://github.com/tebl/SMS2_Composite_Board/raw/master/export/Master%20System%20II%20Video%20Board.pdf) and this is what you'll need to print and work your way through this things don't work as expected after assembly.
 
