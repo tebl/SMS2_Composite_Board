@@ -4,7 +4,11 @@ The Sega Master System II was launched in a newer and updated styled case, unfor
 
 This board aims to add composite or S-video back to your favourite mark II, making it usable today and giving you back the fun you had back in the day! Probably won't need a board like this since there aren't all that many connections and components in the first place, but tried it out and when doing more than one system conversion I figured there was enough of a wire mess to deal with so a small board made sense.
 
-Board is sectioned off so that only the top section is used for composite video, so if you don't intend to use s-video you can save a bunch of wireing and skip these components. Note that it is important to pick power and ground connections that are close to the CXA1145P chip, but not every source is equal - while both pin 12 and 19 are power pins, using 12 as VCC for the circuit will result in glitches on the system (mine goes B/W and flashes purple from time to time) so stick with 19 for that.
+Board is sectioned off so that only the top section is used for composite video, so if you don't intend to use s-video you can save a bunch of wireing and skip these components. Note that it is important to pick power and ground connections that are close to the CXA1145P chip, but not every source is equal - while both pin 12 and 19 are power pins, using 12 as VCC for the circuit will result in glitches on the system (mine goes B/W and flashes purple from time to time) so stick with 19 for that. Don't do what I did, count twice and solder it right the first time. See images below for inspiration!
+
+![Sega Master System II Front](https://github.com/tebl/SMS2_Composite_Board/raw/master/gallery/2019-06-08%2016.49.05.jpg)
+![Sega Master System II Back](https://github.com/tebl/SMS2_Composite_Board/raw/master/gallery/2019-06-08%2016.48.37.jpg)
+![Install](https://github.com/tebl/SMS2_Composite_Board/raw/master/gallery/2019-06-08%2001.18.07.jpg)
 
 # Schematic
 The supplied KiCad files should be sufficient as both a schematic and as a  starting point for ordering PCBs (basically you could just zip the contents of the export folder and upload that on a fabrication site), the schematic is also available in [PDF-format](https://github.com/tebl/SMS2_Composite_Board/raw/master/export/Master%20System%20II%20Video%20Board.pdf) and this is what you'll need to print and work your way through this things don't work as expected after assembly.
