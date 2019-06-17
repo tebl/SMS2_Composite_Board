@@ -22,7 +22,7 @@ Components in parenthesis are those needed extra for the S-video parts, so feel 
 
 | Reference    | Item                                  | Count |
 | ------------ | ------------------------------------- | ----- |
-| PCB          | Fabricate using Gerber files ([order](https://www.pcbway.com/project/shareproject/Atari_2600_Composite_Mod.html=88707))  |     1 |
+| PCB          | Fabricate using Gerber files ([order](https://www.pcbway.com/project/shareproject/Sega_Master_System_II_Composite_Video_Board.html=88707))  |     1 |
 | C1           | 470uf electrolytic capacitor          |     1 |
 | R1           | 150 ohm resistor                      |   (1) | 
 | R2,R4        | 75 ohm resistor                       |     2 |
